@@ -1,0 +1,6 @@
+[user]
+	email = vincent@monadnomad.dev
+	name = Vincent Raerek
+	signingkey = E9FDA0DD9584BB6B
+[commit]
+	gpgsign = true
