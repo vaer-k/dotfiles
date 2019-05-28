@@ -57,3 +57,7 @@ neofetch --color_blocks off --disable gpu | lolcat
 eval $(keychain --eval --quiet yggdrasil --confhost)
 
 eval $(thefuck --alias)
+source /usr/share/nvm/init-nvm.sh
+
+# Get external ip
+alias wanip='dig @resolver1.opendns.com myip.opendns.com ANY +short'
