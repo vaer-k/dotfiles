@@ -1,0 +1,29 @@
+[2019-06-03 15:43:38] WeeChat 2.4 (compiled on Feb 19 2019 15:53:28)
+[2019-06-03 15:43:38] Reading configuration file sec.conf
+[2019-06-03 15:43:42] Reading configuration file weechat.conf
+[2019-06-03 15:43:42] Reading configuration file plugins.conf
+[2019-06-03 15:43:42] Reading configuration file charset.conf
+[2019-06-03 15:43:42] Reading configuration file logger.conf
+[2019-06-03 15:43:42] Reading configuration file exec.conf
+[2019-06-03 15:43:42] Reading configuration file trigger.conf
+[2019-06-03 15:43:42] Reading configuration file aspell.conf
+[2019-06-03 15:43:42] Reading configuration file alias.conf
+[2019-06-03 15:43:42] Reading configuration file buflist.conf
+[2019-06-03 15:43:42] Reading configuration file fifo.conf
+[2019-06-03 15:43:42] Reading configuration file xfer.conf
+[2019-06-03 15:43:42] Reading configuration file irc.conf
+[2019-06-03 15:43:42] Reading configuration file relay.conf
+[2019-06-03 15:43:42] Reading configuration file tcl.conf
+[2019-06-03 15:43:42] Reading configuration file lua.conf
+[2019-06-03 15:43:42] Reading configuration file ruby.conf
+[2019-06-03 15:43:42] Reading configuration file perl.conf
+[2019-06-03 15:43:42] Reading configuration file python.conf
+[2019-06-03 15:43:42] Reading configuration file script.conf
+[2019-06-03 15:43:42] Reading configuration file fset.conf
+[2019-06-03 15:43:42] irc: connecting to server chat.freenode.net/6667...
+[2019-06-04 09:30:28] irc: connecting to server chat.freenode.net/6667...
+[2019-06-04 13:17:45] irc: connecting to server chat.freenode.net/6667...
+[2019-06-04 22:32:43] irc: connecting to server chat.freenode.net/6667...
+[2019-06-05 10:56:04] irc: connecting to server chat.freenode.net/6667...
+[2019-06-05 10:57:24] irc: connecting to server chat.freenode.net/6667...
+[2019-06-05 12:19:01] irc: connecting to server chat.freenode.net/6667...

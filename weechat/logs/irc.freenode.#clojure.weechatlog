@@ -1,0 +1,146 @@
+2019-06-03 15:32:19	-->	vaer-k (loki@gateway/vpn/privateinternetaccess/vaer-k) has joined #clojure
+2019-06-03 15:32:19	--	Topic for #clojure is "Clojure, the language http://clojure.org | Currently at 1.10.0: http://bit.ly/clj-changes | See also #clojure-beginners | Discussion: http://groups.google.com/group/clojure"
+2019-06-03 15:32:19	--	Topic set by amalloy (~amalloy@li231-96.members.linode.com) on Tue, 18 Dec 2018 13:04:33
+2019-06-03 15:32:19	--	Channel #clojure: 259 nicks (1 op, 0 voices, 258 normals)
+2019-06-03 15:32:21	--	Channel created on Tue, 11 Dec 2007 14:04:26
+2019-06-03 15:43:50	-->	vaer-k (vaer-k@gateway/vpn/privateinternetaccess/vaer-k) has joined #clojure
+2019-06-03 15:43:50	--	Topic for #clojure is "Clojure, the language http://clojure.org | Currently at 1.10.0: http://bit.ly/clj-changes | See also #clojure-beginners | Discussion: http://groups.google.com/group/clojure"
+2019-06-03 15:43:50	--	Topic set by amalloy (~amalloy@li231-96.members.linode.com) on Tue, 18 Dec 2018 13:04:33
+2019-06-03 15:43:50	--	Channel #clojure: 260 nicks (1 op, 0 voices, 259 normals)
+2019-06-03 15:43:50	--	Channel created on Tue, 11 Dec 2007 14:04:26
+2019-06-03 15:50:36	<--	bsjd (~bsjd@91.180.2.58) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-06-03 15:52:27	<--	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has quit (Ping timeout: 272 seconds)
+2019-06-03 15:54:44	patchwork	justin_smith: caribou lol. The world was not ready
+2019-06-03 15:55:26	patchwork	It still lives on in our hearts
+2019-06-03 15:55:58	patchwork	I still think the idea is sound, but I have since then found 15 cooler things to work on than a web framework
+2019-06-03 15:59:06	-->	thebope_ (~thebope@pdpc/supporter/student/thebope) has joined #clojure
+2019-06-03 15:59:52	--	evdubs_ is now known as evdubs
+2019-06-03 16:01:11	<--	thebope (~thebope@pdpc/supporter/student/thebope) has quit (Ping timeout: 248 seconds)
+2019-06-03 16:01:57	<--	jjttjj (~justin@pool-74-101-0-252.nycmny.fios.verizon.net) has quit (Ping timeout: 272 seconds)
+2019-06-03 16:09:38	-->	cow-orker (~foobar@pogostick.net) has joined #clojure
+2019-06-03 16:24:07	-->	plutoniix (~q@175.176.222.7) has joined #clojure
+2019-06-03 16:28:44	-->	deadghost (~thedeadgh@108.169.215.237) has joined #clojure
+2019-06-03 17:00:41	-->	zmack (~zmack@2604:5500:c091:ec00:147:3741:bc56:bd31) has joined #clojure
+2019-06-03 17:07:20	-->	Sgeo_ (~Sgeo@ool-18b98439.dyn.optonline.net) has joined #clojure
+2019-06-04 09:30:18	--	irc: disconnected from server
+2019-06-04 09:30:36	-->	vaer-k (vaer-k@gateway/vpn/privateinternetaccess/vaer-k) has joined #clojure
+2019-06-04 09:30:36	--	Topic for #clojure is "Clojure, the language http://clojure.org | Currently at 1.10.0: http://bit.ly/clj-changes | See also #clojure-beginners | Discussion: http://groups.google.com/group/clojure"
+2019-06-04 09:30:36	--	Topic set by amalloy (~amalloy@li231-96.members.linode.com) on Tue, 18 Dec 2018 13:04:33
+2019-06-04 09:30:36	--	Channel #clojure: 277 nicks (1 op, 0 voices, 276 normals)
+2019-06-04 09:30:37	--	Channel created on Tue, 11 Dec 2007 14:04:26
+2019-06-04 09:32:18	<--	Kajtek (~nope@unaffiliated/kajtek) has quit (Remote host closed the connection)
+2019-06-04 09:37:06	-->	whoops (whoopsmatr@gateway/shell/matrix.org/x-ytvdprbhiczqjyez) has joined #clojure
+2019-06-04 09:42:57	-->	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has joined #clojure
+2019-06-04 09:55:33	-->	frem (uid16862@gateway/web/irccloud.com/x-ffopizlatweyaslv) has joined #clojure
+2019-06-04 09:58:45	<--	jayemar (~user@50-203-248-82-static.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2019-06-04 10:05:50	<--	ravenousmoose (~ravenousm@ptr-cud5aqemy21tf7nmxid.18120a2.ip6.access.telenet.be) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-06-04 10:06:50	technomancy	did the 3x boot time jdk regression get fixed on jdk 8 or only on 13?
+2019-06-04 10:08:52	technomancy	looks like no https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8219233
+2019-06-04 10:15:25	<--	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has quit (Ping timeout: 245 seconds)
+2019-06-04 10:16:00	-->	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has joined #clojure
+2019-06-04 10:20:42	-->	moei (~moei@softbank221078042071.bbtec.net) has joined #clojure
+2019-06-04 10:35:01	-->	elinow (~elinow@178.127.245.22) has joined #clojure
+2019-06-04 10:36:17	<--	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has quit (Ping timeout: 248 seconds)
+2019-06-04 10:49:30	-->	bexx (~user@190.19.41.8) has joined #clojure
+2019-06-04 10:51:20	-->	glosoli (~glosoli@unaffiliated/glosoli) has joined #clojure
+2019-06-04 10:54:35	-->	awshawmn (~awshawmn@185.149.90.4) has joined #clojure
+2019-06-04 11:11:38	-->	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has joined #clojure
+2019-06-04 11:16:22	<--	SkinnyMelon (~SkinnyMel@BC9C483B.mobile.pool.telekom.hu) has quit (Ping timeout: 248 seconds)
+2019-06-04 11:17:28	<--	kerrang (c74c1502@gateway/web/cgi-irc/kiwiirc.com/ip.199.76.21.2) has quit (Ping timeout: 268 seconds)
+2019-06-04 11:25:10	-->	SkinnyMelon (~SkinnyMel@BC9C483B.mobile.pool.telekom.hu) has joined #clojure
+2019-06-04 11:30:14	<--	sauvin (sauvin@about/linux/staff/sauvin) has quit (Ping timeout: 248 seconds)
+2019-06-04 11:33:34	-->	ravenousmoose (~ravenousm@ptr-cud5aqemy21tf7nmxid.18120a2.ip6.access.telenet.be) has joined #clojure
+2019-06-04 11:43:29	<--	awshawmn (~awshawmn@185.149.90.4) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-06-04 11:44:06	<--	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has quit (Ping timeout: 248 seconds)
+2019-06-04 11:47:12	-->	Kajtek (~nope@unaffiliated/kajtek) has joined #clojure
+2019-06-04 11:51:21	<--	AimHere (~David@cpc132308-sgyl43-2-0-cust150.know.cable.virginm.net) has quit (Ping timeout: 272 seconds)
+2019-06-04 11:54:00	-->	AimHere (~David@cpc132308-sgyl43-2-0-cust150.know.cable.virginm.net) has joined #clojure
+2019-06-04 11:55:17	<--	elinow (~elinow@178.127.245.22) has quit (Remote host closed the connection)
+2019-06-04 11:55:36	-->	elinow (~elinow@178.127.245.22) has joined #clojure
+2019-06-04 12:04:43	-->	neoncontrails (~kz@rrcs-173-197-167-2.west.biz.rr.com) has joined #clojure
+2019-06-04 12:06:16	<--	casaca (~nut@209.222.10.61) has quit (Ping timeout: 245 seconds)
+2019-06-04 12:08:20	-->	casaca (~nut@209.222.10.61) has joined #clojure
+2019-06-04 12:13:17	-->	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has joined #clojure
+2019-06-04 12:14:31	<--	DTZUZO (~DTZUZO@S0106bcd16584b0aa.vs.shawcable.net) has quit (Quit: WeeChat 2.0)
+2019-06-04 12:17:38	<--	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has quit (Ping timeout: 252 seconds)
+2019-06-04 12:24:20	-->	awshawmn (~awshawmn@185.149.90.4) has joined #clojure
+2019-06-04 12:25:17	<--	elinow (~elinow@178.127.245.22) has quit (Remote host closed the connection)
+2019-06-04 12:25:40	-->	elinow (~elinow@178.127.245.22) has joined #clojure
+2019-06-04 12:27:13	<--	casaca (~nut@209.222.10.61) has quit (Ping timeout: 248 seconds)
+2019-06-04 12:28:00	-->	casaca (~nut@209.222.10.61) has joined #clojure
+2019-06-04 12:36:57	<--	casaca (~nut@209.222.10.61) has quit (Ping timeout: 272 seconds)
+2019-06-04 13:17:35	--	irc: disconnected from server
+2019-06-04 13:17:55	-->	vaer-k (vaer-k@gateway/vpn/privateinternetaccess/vaer-k) has joined #clojure
+2019-06-04 13:17:55	--	Topic for #clojure is "Clojure, the language http://clojure.org | Currently at 1.10.0: http://bit.ly/clj-changes | See also #clojure-beginners | Discussion: http://groups.google.com/group/clojure"
+2019-06-04 13:17:55	--	Topic set by amalloy (~amalloy@li231-96.members.linode.com) on Tue, 18 Dec 2018 13:04:33
+2019-06-04 13:17:55	--	Channel #clojure: 279 nicks (1 op, 0 voices, 278 normals)
+2019-06-04 13:17:56	--	Channel created on Tue, 11 Dec 2007 14:04:26
+2019-06-04 13:25:07	<--	libertyprime (~libertypr@101.98.42.91) has quit (Ping timeout: 268 seconds)
+2019-06-04 13:27:39	-->	TEttinger (~notostrac@76-217-24-171.lightspeed.irvnca.sbcglobal.net) has joined #clojure
+2019-06-04 13:47:30	-->	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has joined #clojure
+2019-06-04 13:51:18	<--	ravenousmoose (~ravenousm@ptr-cud5aqemy21tf7nmxid.18120a2.ip6.access.telenet.be) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-06-04 14:05:58	<--	tomku (~tomku@unaffiliated/tomku) has quit (Ping timeout: 248 seconds)
+2019-06-04 14:08:55	-->	tomku (~tomku@unaffiliated/tomku) has joined #clojure
+2019-06-04 14:12:17	<--	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has quit (Ping timeout: 248 seconds)
+2019-06-04 14:13:22	<--	tomku (~tomku@unaffiliated/tomku) has quit (Ping timeout: 248 seconds)
+2019-06-04 14:14:10	-->	tomku (~tomku@unaffiliated/tomku) has joined #clojure
+2019-06-04 14:33:10	<--	cmiles74 (~miles@50-250-16-1-static.hfc.comcastbusiness.net) has quit (Ping timeout: 248 seconds)
+2019-06-04 14:37:35	<--	Kajtek (~nope@unaffiliated/kajtek) has quit (Remote host closed the connection)
+2019-06-04 14:43:56	<--	leaves (~leaves@unaffiliated/leaves) has quit (Ping timeout: 246 seconds)
+2019-06-04 14:45:15	<--	frem (uid16862@gateway/web/irccloud.com/x-ffopizlatweyaslv) has quit (Quit: Connection closed for inactivity)
+2019-06-04 14:48:15	<--	obfusk (~quassel@relto.rasusan.nl) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2019-06-04 14:49:10	<--	sameerynho (~lxsameer@unaffiliated/lxsameer) has quit (Ping timeout: 248 seconds)
+2019-06-04 14:50:33	-->	obfusk (~quassel@relto.rasusan.nl) has joined #clojure
+2019-06-04 14:51:26	<--	obfusk (~quassel@relto.rasusan.nl) has quit (Client Quit)
+2019-06-04 14:59:45	-->	obfusk (~quassel@relto.rasusan.nl) has joined #clojure
+2019-06-04 15:08:17	<--	SkinnyMelon (~SkinnyMel@BC9C483B.mobile.pool.telekom.hu) has quit (Ping timeout: 248 seconds)
+2019-06-04 15:19:08	<--	bertschneider_ (~bertschne@mail.bertschneider.de) has quit (Ping timeout: 252 seconds)
+2019-06-04 15:28:34	<--	johnjay (~pi@38.120.10.99) has quit (Read error: Connection reset by peer)
+2019-06-04 15:29:55	-->	johnjay (~pi@38.120.10.99) has joined #clojure
+2019-06-04 15:58:39	<--	moei (~moei@softbank221078042071.bbtec.net) has quit (Quit: Leaving...)
+2019-06-04 16:00:01	<--	fp7 (~fp7@unaffiliated/fp7) has quit (Ping timeout: 258 seconds)
+2019-06-04 16:02:07	-->	bertschneider_ (~bertschne@mail.bertschneider.de) has joined #clojure
+2019-06-04 16:04:11	-->	rohitpaulk (~rohitpaul@182.69.212.145) has joined #clojure
+2019-06-04 16:09:11	-->	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has joined #clojure
+2019-06-04 16:15:57	--	apmm is now known as monad
+2019-06-04 16:22:31	-->	deadghost (~thedeadgh@108.169.215.237) has joined #clojure
+2019-06-04 22:32:33	--	irc: disconnected from server
+2019-06-04 22:32:51	-->	vaer-k (vaer-k@gateway/vpn/privateinternetaccess/vaer-k) has joined #clojure
+2019-06-04 22:32:51	--	Topic for #clojure is "Clojure, the language http://clojure.org | Currently at 1.10.0: http://bit.ly/clj-changes | See also #clojure-beginners | Discussion: http://groups.google.com/group/clojure"
+2019-06-04 22:32:51	--	Topic set by amalloy (~amalloy@li231-96.members.linode.com) on Tue, 18 Dec 2018 13:04:33
+2019-06-04 22:32:51	--	Channel #clojure: 272 nicks (1 op, 0 voices, 271 normals)
+2019-06-04 22:32:52	--	Channel created on Tue, 11 Dec 2007 14:04:26
+2019-06-04 22:41:19	<--	telex (teletype@freeshell.de) has quit (Ping timeout: 258 seconds)
+2019-06-04 22:44:23	<--	notzmv (~zmv@unaffiliated/zmv) has quit (Ping timeout: 258 seconds)
+2019-06-04 22:44:38	<--	glosoli (~glosoli@unaffiliated/glosoli) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-06-04 22:46:49	<--	zooey (~zooey@gateway/tor-sasl/zooey) has quit (Remote host closed the connection)
+2019-06-04 22:47:03	-->	zooey (~zooey@gateway/tor-sasl/zooey) has joined #clojure
+2019-06-05 10:55:54	--	irc: disconnected from server
+2019-06-05 10:57:33	-->	vaer-k (vaer-k@gateway/vpn/privateinternetaccess/vaer-k) has joined #clojure
+2019-06-05 10:57:33	--	Topic for #clojure is "Clojure, the language http://clojure.org | Currently at 1.10.0: http://bit.ly/clj-changes | See also #clojure-beginners | Discussion: http://groups.google.com/group/clojure"
+2019-06-05 10:57:33	--	Topic set by amalloy (~amalloy@li231-96.members.linode.com) on Tue, 18 Dec 2018 13:04:33
+2019-06-05 10:57:33	--	Channel #clojure: 275 nicks (1 op, 0 voices, 274 normals)
+2019-06-05 10:57:34	--	Channel created on Tue, 11 Dec 2007 14:04:26
+2019-06-05 10:59:19	<--	gigasquid (~cmeier@ip-192-24-150-52.dynamic.fuse.net) has quit (Ping timeout: 248 seconds)
+2019-06-05 11:01:21	-->	dpl (~dpl@193.34.61.54) has joined #clojure
+2019-06-05 11:06:08	<--	AimHere (~David@cpc132308-sgyl43-2-0-cust150.know.cable.virginm.net) has quit (Ping timeout: 258 seconds)
+2019-06-05 11:07:22	-->	AimHere (~David@cpc132308-sgyl43-2-0-cust150.know.cable.virginm.net) has joined #clojure
+2019-06-05 11:07:41	-->	ravenous_ (~ravenousm@ptr-cud5aqemy21tf7nmxid.18120a2.ip6.access.telenet.be) has joined #clojure
+2019-06-05 11:17:23	<--	SkinnyMelon (~SkinnyMel@BC9C483B.mobile.pool.telekom.hu) has quit (Ping timeout: 268 seconds)
+2019-06-05 11:21:25	-->	bexx (~user@190.19.41.8) has joined #clojure
+2019-06-05 11:23:13	-->	themsay (~themsay@149.254.234.202) has joined #clojure
+2019-06-05 11:29:30	<--	sauvin (sauvin@about/linux/staff/sauvin) has quit (Ping timeout: 252 seconds)
+2019-06-05 11:33:11	<--	themsay (~themsay@149.254.234.202) has quit (Ping timeout: 272 seconds)
+2019-06-05 12:18:51	--	irc: disconnected from server
+2019-06-05 12:19:10	-->	vaer-k (vaer-k@gateway/vpn/privateinternetaccess/vaer-k) has joined #clojure
+2019-06-05 12:19:10	--	Topic for #clojure is "Clojure, the language http://clojure.org | Currently at 1.10.0: http://bit.ly/clj-changes | See also #clojure-beginners | Discussion: http://groups.google.com/group/clojure"
+2019-06-05 12:19:10	--	Topic set by amalloy (~amalloy@li231-96.members.linode.com) on Tue, 18 Dec 2018 13:04:33
+2019-06-05 12:19:10	--	Channel #clojure: 281 nicks (1 op, 0 voices, 280 normals)
+2019-06-05 12:19:11	--	Channel created on Tue, 11 Dec 2007 14:04:26
+2019-06-05 12:20:47	-->	rohitpaulk (~rohitpaul@106.215.122.8) has joined #clojure
+2019-06-05 12:21:08	-->	alexshendi (~yaaic@2a02:8070:21a2:a000:590:5955:4a42:d243) has joined #clojure
+2019-06-05 12:24:51	<--	e^x (~~@april-fools/2013/runnerup/ex) has quit (Remote host closed the connection)
+2019-06-05 12:25:36	-->	e^x (~~@april-fools/2013/runnerup/ex) has joined #clojure
+2019-06-05 12:26:52	-->	neoncontrails (~kz@rrcs-173-197-167-2.west.biz.rr.com) has joined #clojure
+2019-06-05 12:40:53	--	amalloy_ is now known as amalloy
+2019-06-05 12:41:27	-->	grim_radical (~grim_radi@brownman.org) has joined #clojure
