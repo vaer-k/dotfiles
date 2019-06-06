@@ -59,7 +59,7 @@ font-2 = FontAwesome5Free:style=Solid:pixelsize=10;0
 
 modules-left = i3
 modules-center = 
-modules-right = filesystem pulseaudio memory cpu wlan eth xkeyboard temperature battery date
+modules-right = wlan filesystem pulseaudio memory cpu eth xkeyboard temperature battery date
 
 tray-position = right
 tray-padding = 2
