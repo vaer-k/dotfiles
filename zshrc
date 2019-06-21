@@ -61,3 +61,6 @@ source /usr/share/nvm/init-nvm.sh
 
 # Get external ip
 alias wanip='dig @resolver1.opendns.com myip.opendns.com ANY +short'
+
+# Set up env vars
+source /keybase/private/vaer_k/config/secrets.sh

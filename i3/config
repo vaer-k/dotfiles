@@ -190,4 +190,5 @@ exec --no-startup-id feh --bg-scale ~/Pictures/hyperbeast.png
 exec --no-startup-id conky -c ~/conky/.conkyrc
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id compton --config ~/.config/compton/compton.conf
+exec_always --no-startup-id run_keybase -g
 # exec --no-startup-id nm-applet
