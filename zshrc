@@ -46,14 +46,15 @@ export PATH=~/bin:~/.local/bin:$PATH
 # CLOJURE
 export BOOT_CLOJURE_VERSION=1.10.0
 
-# stty -ixon
+# Keychain -- looks in .ssh dir by default
+eval $(keychain --eval --quiet yggdrasil)
 
 neofetch --color_blocks off --disable gpu | lolcat
 
 # launch SSH Keychain 
 # eval $(keychain --eval --quiet yggdrasil --confhost)
 
-# source /usr/share/nvm/init-nvm.sh
+source /usr/share/nvm/init-nvm.sh
 
 # Get external ip
 alias wanip='dig @resolver1.opendns.com myip.opendns.com ANY +short'
