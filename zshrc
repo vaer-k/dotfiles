@@ -62,3 +62,6 @@ alias wanip='dig @resolver1.opendns.com myip.opendns.com ANY +short'
 # asdf
 source /opt/asdf-vm/asdf.sh
 source /opt/asdf-vm/completions/asdf.bash
+
+# IEx
+export ERL_AFLAGS="-kernel shell_history enabled"
